@@ -1,0 +1,17 @@
+{
+  "name": "distancequerycalculator",
+  "version": "1.0.0",
+  "description": "Calculates the distance between two locations",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

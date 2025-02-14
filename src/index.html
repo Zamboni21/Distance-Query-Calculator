@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Distance Query Calculator</h1>
+        <form id="form-distance">
+            <label for="source">Source:</label>
+            <input type="text" id="source" name="source" required>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+            <button type="submit" id="btn-CalculateDistance">Calculate Distance</button>
+        </form>
+        <div id="result"></div>
+        <div id="error-message"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
