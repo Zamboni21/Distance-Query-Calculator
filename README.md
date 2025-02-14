@@ -13,19 +13,23 @@ This project calculates the distance between two locations in kilometers using t
 ## Installation
 
 1. Clone the repository:
+    ```bash
     git clone https://github.com/yourusername/DistanceQueryCalculator.git
-
+    ```
 2. Navigate to the project directory:
+    ```bash
     cd DistanceQueryCalculator
-
+    ```
 3. Install the dependencies:
+    ```bash
     npm install
-
+    ```
 ## Usage
 
 1. Start the server:
+    ```bash
     npm start
-
+    ```
 2. Open your web browser and navigate to `http://localhost:3000`.
 3. Enter the source and destination addresses in the form and submit.
 4. Open `http://localhost:3000/queriesView` to access the Historical Queries.
