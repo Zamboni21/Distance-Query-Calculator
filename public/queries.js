@@ -12,7 +12,7 @@ async function fetchQueries() {
             row.innerHTML = `
                 <td>${query.source}</td>
                 <td>${query.destination}</td>
-                <td>${query.distance}</td>
+                <td>${query.distance.toFixed(2)}</td>
                 <td>${new Date(query.timestamp).toLocaleString()}</td>
             `;
             tableBody.appendChild(row);
@@ -23,3 +23,7 @@ async function fetchQueries() {
 }
 
 window.onload = fetchQueries;
+
+document.getElementById('btn-mainView').addEventListener('click', async (event) => {
+    window.location.href = '/';
+});

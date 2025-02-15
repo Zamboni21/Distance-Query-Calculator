@@ -75,3 +75,7 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 function toRadians(degrees) {
     return degrees * (Math.PI / 180);
 }
+
+document.getElementById('btn-historicalQueriesView').addEventListener('click', async () => {
+    window.location.href = '/queriesView';
+});
