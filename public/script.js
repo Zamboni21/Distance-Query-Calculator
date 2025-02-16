@@ -1,6 +1,8 @@
+// Run the code when the form is submitted
 document.getElementById('form-distance').addEventListener('submit', async (event) => {
     event.preventDefault();
 
+    // Adds a plus sign between words in the source and destination to search correctly with nominatim API
     let source = document.getElementById('source').value.replace(/ /g, '+');
     let destination = document.getElementById('destination').value.replace(/ /g, '+');
 
@@ -56,11 +58,12 @@ document.getElementById('form-distance').addEventListener('submit', async (event
     }
     catch (error) {
         console.error(error);
-        document.getElementById("error-message").innerHTML = 'Error: ' + error.message;
+        document.getElementById("error-message").innerHTML = error.message;
         document.getElementById("error-message").style.display = 'block';
     }
 });
 
+// Function to calculate the distance between two points using the Haversine formula
 function calculateDistance(lat1, lon1, lat2, lon2) {
     const R = 6371; // Radius of the Earth in kilometers
     const dLat = toRadians(lat2 - lat1);

@@ -1,3 +1,4 @@
+// Function to fetch all the queries done by the user
 async function fetchQueries() {
     try {
         const response = await axios.get('/queries');
@@ -22,6 +23,7 @@ async function fetchQueries() {
     }
 }
 
+// Fetch queries when the page loads
 window.onload = fetchQueries;
 
 document.getElementById('btn-mainView').addEventListener('click', async (event) => {

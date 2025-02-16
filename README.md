@@ -14,11 +14,11 @@ This project calculates the distance between two locations in kilometers using t
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/DistanceQueryCalculator.git
+    git clone https://github.com/Zamboni21/Distance-Query-Calculator.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd DistanceQueryCalculator
+    cd Distance-Query-Calculator
     ```
 3. Install the dependencies:
     ```bash
